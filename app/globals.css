@@ -86,6 +86,16 @@ html, body {
   }
 }
 
+::selection {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+::-moz-selection {
+  background: var(--ink);
+  color: var(--bg);
+}
+
 .arcilla {
   font-family: 'Arcilla', Georgia, 'Times New Roman', serif;
   font-weight: 400;
@@ -540,6 +550,16 @@ nav.main-nav {
 }
 
 .field select:invalid {
+  color: var(--ink-whisper);
+}
+
+.field select option {
+  color: var(--ink);
+  background: var(--bg);
+  font-family: 'Rethink Sans', sans-serif;
+}
+
+.field select option[value=""][disabled] {
   color: var(--ink-whisper);
 }
 

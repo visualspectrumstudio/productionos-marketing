@@ -1,12 +1,20 @@
+'use client';
+
+import Nav from './Nav';
+import Hero from './Hero';
+import Proof from './Proof';
+import WaitlistForm from './WaitlistForm';
+import Footer from './Footer';
+import sharedFooter from '@/content/shared/footer';
+
 export default function LandingPage({ variant }) {
   return (
-    <div style={{ padding: '40px' }}>
-      <h1 style={{ fontFamily: 'Arcilla, serif', fontSize: '48px', color: 'var(--ink)', marginBottom: '16px' }}>
-        Hello from {variant.slug}
-      </h1>
-      <p style={{ fontFamily: 'Rethink Sans, sans-serif', color: 'var(--ink)', fontSize: '18px' }}>
-        {variant.hero.headlineLead} {variant.hero.headlineAccent}
-      </p>
-    </div>
+    <>
+      <Nav />
+      <Hero hero={variant.hero} />
+      <Proof proof={variant.proof} />
+      <WaitlistForm form={variant.form} />
+      <Footer footer={sharedFooter} />
+    </>
   );
 }

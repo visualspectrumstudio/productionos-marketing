@@ -1,8 +1,13 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'ProductionOS',
-  description: 'A single source of truth for your production.',
+  title: 'ProductionOS — A single source of truth for your production',
+  description: 'Stop frankensteining subscriptions together to manage your show. ProductionOS replaces TeamTrack, HireHop, Notion and email advances with one system.',
+  openGraph: {
+    title: 'ProductionOS — A single source of truth for your production',
+    description: 'Stop frankensteining subscriptions together to manage your show.',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {

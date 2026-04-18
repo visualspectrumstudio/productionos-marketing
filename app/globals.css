@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Arcilla';
+  src: url('/fonts/SLTFARCILLA-Regular.woff2') format('woff2'),
+       url('/fonts/SLTFARCILLA-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('/fonts/RethinkSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('/fonts/RethinkSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('/fonts/RethinkSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('/fonts/RethinkSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #EEE8DC;
+  --surface: #F5F0E8;
+  --ink: #151515;
+  --ink-soft: rgba(21, 21, 21, 0.72);
+  --ink-faint: rgba(21, 21, 21, 0.5);
+  --ink-whisper: rgba(21, 21, 21, 0.35);
+  --olive: #747C51;
+  --olive-hover: #5F6642;
+  --hairline: rgba(21, 21, 21, 0.12);
+  --hairline-strong: rgba(21, 21, 21, 0.2);
+  --accent-orange: #FF3701;
+  --accent-amber: #F98441;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: var(--bg) !important;
+    color: var(--ink) !important;
+  }
+}

@@ -557,10 +557,16 @@ nav.main-nav {
   color: var(--ink);
   background: var(--bg);
   font-family: 'Rethink Sans', sans-serif;
+  padding: 10px;
 }
 
 .field select option[value=""][disabled] {
   color: var(--ink-whisper);
+}
+
+.field select option:checked {
+  background: var(--olive);
+  color: var(--bg);
 }
 
 .form-footer {
